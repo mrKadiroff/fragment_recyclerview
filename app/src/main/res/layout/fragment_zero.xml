@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ZeroFragment">
+
+<!--   <Button-->
+<!--       android:id="@+id/goo"-->
+<!--       android:layout_width="100dp"-->
+<!--       android:layout_height="70dp"-->
+<!--       android:layout_gravity="center"-->
+<!--       android:text="go"/>-->
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/goo"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       app:cardBackgroundColor="#EF7575"
+       app:cardElevation="100dp"
+       app:cardCornerRadius="20dp"
+       android:clickable="true"
+       android:focusable="true"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.215"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.251" >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:textSize="25sp"
+          android:textColor="@color/black"
+         android:text="Tariflar"
+          android:textStyle="normal"
+         android:layout_gravity="center"/>
+
+
+   </androidx.cardview.widget.CardView>
+
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/minut"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       app:cardElevation="100dp"
+       app:cardCornerRadius="20dp"
+       android:clickable="true"
+       android:focusable="true"
+       app:layout_constraintStart_toEndOf="@id/goo"
+       app:layout_constraintBottom_toBottomOf="@id/goo"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:cardBackgroundColor="#71B640" >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="Daqiqalar"
+          android:textColor="@color/black"
+          android:textStyle="normal"
+          android:layout_gravity="center"/>
+
+
+   </androidx.cardview.widget.CardView>
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       app:cardBackgroundColor="#1565C0"
+       app:cardElevation="100dp"
+       app:cardCornerRadius="20dp"
+       android:clickable="true"
+       android:focusable="true"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="@id/goo"
+       app:layout_constraintTop_toBottomOf="@id/goo"
+       app:layout_constraintVertical_bias="0.19999999" >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="Internet"
+          android:textColor="@color/black"
+          android:textStyle="normal"
+          android:layout_gravity="center"/>
+
+
+   </androidx.cardview.widget.CardView>
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       app:cardBackgroundColor="#F9A825"
+       app:cardElevation="100dp"
+       app:cardCornerRadius="20dp"
+       android:clickable="true"
+       android:focusable="true"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="@id/minut"
+       app:layout_constraintTop_toBottomOf="@id/minut"
+       app:layout_constraintVertical_bias="0.19999999" >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="Xizmatlar"
+          android:textColor="@color/black"
+          android:textStyle="normal"
+          android:layout_gravity="center"/>
+
+
+   </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
